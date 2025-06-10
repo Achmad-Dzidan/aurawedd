@@ -1,0 +1,332 @@
+/*@import url(../fonts/flaticon/flaticon.css);*/
+
+.close {float:right;font-size:21px;font-weight:700;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20);opacity:.2}
+.modal-open .modal .dropdown-menu { z-index: 2050;}
+.modal-open .modal .dropdown.open {*z-index: 2050;}
+.modal-open .modal .popover { z-index: 2060;}
+.modal-open .modal .tooltip {z-index: 2080;}
+.modal-backdrop {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 9999;background-color:#000;}
+.modal-backdrop.fade { opacity: 0;}
+.modal-backdrop,.modal-backdrop.fade.in {opacity: 0.8; filter: alpha(opacity=80);}
+.modal {position: fixed;top: 60%;left: 50%;z-index: 10000;overflow: auto;width: 560px;margin: -250px 0 0 -280px;background-color: #ffffff;border: 1px solid #999;border: 1px solid rgba(0, 0, 0, 0.3);*border: 1px solid #999;/* IE6-7 */-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);-webkit-background-clip: padding-box;-moz-background-clip: padding-box;background-clip: padding-box;color:#555555;display:none;}
+.modal.fade {-webkit-transition: opacity .3s linear, top .3s ease-out;-moz-transition: opacity .3s linear, top .3s ease-out; -o-transition: opacity .3s linear, top .3s ease-out; transition: opacity .3s linear, top .3s ease-out; top: -25%;}
+.modal.fade.in {top: 50%;border-radius: 7px;}
+.modal-header {padding: 9px 15px;border-bottom: 1px solid #e4e4e4;}
+.modal-header .close {margin-top: 2px;position:absolute; top:10px; right:10px;color:#555555;}
+.modal-header h3 {margin: 0;line-height: 22px;text-align:center;font-size:18px;text-transform:uppercase;}
+.modal-body {overflow-y: auto; max-height: 430px; padding: 15px;}
+.modal-body h4 {font-weight:bold;font-size:16px;text-transform:uppercase;}
+.modal-body input[type=text],.modal-body input[type=password] {height: 26px; padding: 3px 5px; font-size: 16px; border:1px solid #CCCCCC;-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;}
+.modal-form {margin-bottom: 0;}
+.modal-footer {padding: 14px 15px 15px;margin-bottom: 0;text-align: center;background-color: #fff;-webkit-border-radius: 0 0 0px 0px;-moz-border-radius: 0 0 0px 0px;border-radius: 0 0 0px 0px;-webkit-box-shadow: inset 0 1px 0 #ffffff;-moz-box-shadow: inset 0 1px 0 #ffffff;box-shadow: inset 0 1px 0 #ffffff;*zoom: 1;color:#555;}
+.modal-footer a {font-size:13px;}
+.modal-footer .btn {margin:0px;}
+.modal-footer .btnsendctc {border-radius: 7px;}
+.modal-footer:before,.modal-footer:after {display: table;content: "";line-height: 0;}
+.modal-footer:after {clear: both;}
+.modal-footer .btn + .btn {margin-left: 5px;margin-bottom: 0;}
+.modal-footer .btn-group .btn + .btn {margin-left: -1px;}
+
+@media screen and (max-width: 768px) {
+.modal strong {font-weight:600;}
+.modal .modal-dialog .modal-content .modal-body .controls strong{margin-left: 10px;}
+@media screen and (min-width: 769px) {
+	#filterModal{display:none;}
+}
+@media screen and (max-width: 768px) {
+	.modal-open {
+	  overflow: hidden;
+	}
+
+	.modal {
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  z-index: 1050;
+	  display: none;
+	  overflow: hidden;
+	  outline: 0;
+	  background-color: #ffffff;
+	  width: auto;
+	  margin:auto;
+	  border:none;
+	}
+
+	.modal-open .modal {
+	  overflow-x: hidden;
+	  overflow-y: auto;
+	}
+
+	.modal-dialog {
+	  position: relative;
+	  width: auto;
+	  margin: 0.5rem;
+	  background-color: #fff;
+	}
+
+	.modal.fade .modal-dialog {
+	  transition: -webkit-transform 0.3s ease-out;
+	  transition: transform 0.3s ease-out;
+	  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+	}
+
+	@media screen and (prefers-reduced-motion: reduce) {
+	  .modal.fade .modal-dialog {
+		transition: none;
+	  }
+	}
+
+	.modal.show .modal-dialog {
+	  -webkit-transform: translate(0, 0);
+	  transform: translate(0, 0);
+	}
+
+	.modal-dialog-centered {
+	  display: -ms-flexbox;
+	  display: flex;
+	  -ms-flex-align: center;
+	  align-items: center;
+	  min-height: calc(100% - (0.5rem * 2));
+	}
+
+	.modal-content {
+	  position: relative;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -ms-flex-direction: column;
+	  flex-direction: column;
+	  width: auto;
+	  margin: auto;
+	  pointer-events: auto;
+	  background-color: #fff;
+	  background-clip: padding-box;
+	  /*border: 1px solid rgba(0, 0, 0, 0.2);*/
+	  border-radius: 0.3rem;
+	  outline: 0;
+	  height: auto;
+	}
+
+	.modal-backdrop {
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  z-index: 1040;
+	  background-color: #000;
+	}
+
+	.modal-backdrop.fade {
+	  opacity: 0;
+	}
+
+	.modal-backdrop.show {
+	  opacity: 0.5;
+	}
+
+	.modal-header {
+	  -ms-flex-align: start;
+	  align-items: flex-start;
+	  -ms-flex-pack: justify;
+	  justify-content: space-between;
+	  padding: 1rem;
+	  border-bottom: 1px solid #e9ecef;
+	  border-top-left-radius: 0.3rem;
+	  border-top-right-radius: 0.3rem;
+	}
+
+	.modal-header .close {
+	  padding: 1rem;
+	  margin: -1rem -1rem -1rem auto;
+	}
+
+	.modal-title {
+	  margin-bottom: 0;
+	  line-height: 1.5;
+	}
+
+	#contactus.modal {
+		height: 65vh;
+		width: 90%}
+	#contactus .modal-body {
+	    max-height: 40vh;}
+	#contactus .modal-body .control-group .controls img{
+		border-radius: 50%;
+		width: 8%;
+		float: left;
+		clear: left;
+	}
+
+	.modal-body {
+	  position: relative;
+	  -ms-flex: 1 1 auto;
+	  flex: 1 1 auto;
+	  padding: 1rem;
+	  max-height: none;
+	}
+
+	.modal-footer {
+	  -ms-flex-align: center;
+	  align-items: center;
+	  -ms-flex-pack: end;
+	  justify-content: flex-end;
+	  padding: 1rem;
+	}
+
+	.modal-footer > :not(:first-child) {
+	  margin-left: .25rem;
+	}
+
+	.modal-footer > :not(:last-child) {
+	  margin-right: .25rem;
+	}
+
+	.modal-scrollbar-measure {
+	  position: absolute;
+	  top: -9999px;
+	  width: 50px;
+	  height: 50px;
+	  overflow: scroll;
+	}
+	.modal.fade.in {
+		top: 0 !important;
+		max-height: 70vh;
+    	height: fit-content;
+	}
+	#popupexperience, #popuppartweddingku, #popupdigitize, #popupzerocom{
+		width:auto !important;
+	}
+	#minilogin.modal {
+		width: auto;
+		border-radius: 0 !important;
+	}
+
+	.filter-title{
+		padding: 10px;
+	}
+	.filter-header hr{
+		margin-top: 0;
+	}
+	.frm-filter ul li.dropdown-m{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#m-btn-close {
+		border: none;
+		background-color: inherit;
+		float: right;
+		font-size: 35px;
+    	padding: 5px 10px;    
+		position: absolute;
+		right: 0px;
+		top: -12px;
+	}
+	select{
+		width: 100%;
+		height: 40px;
+		margin-bottom: 10px !important;
+		background-color: inherit;
+		border-color: #dddd;
+		margin-top:5px !important;
+		color: #8a8a8a;
+		padding-left: 20px;
+		padding-right:20px;
+	}
+
+	select option{
+		color: #8a8a8a;
+	}
+
+	#filterModal .btn {
+		bottom: 20px;
+		width: 90%;
+		position: fixed;
+		margin-left: 20px;	
+	}	
+	#filterModal p{
+		font-weight: 600;
+		text-align: center;
+		font-size: 15px; 
+		font-family: 'Montserrat';
+	}
+	
+	#filterModal .filter-body {
+		height: 100vh;
+		overflow-y: scroll;
+	}
+	
+	#filterModal li {
+		width: 100%;
+		border-bottom: 1px solid #ebebeb;
+		background-color: #FFFFFF;
+		display: block;
+		position: relative;
+	}
+	
+	#filterModal li .sig-menu {
+		padding: 0px 20px 80px;
+	}
+	
+	#filterModal li .sig-menu div {
+		width: 50%;
+		float: left;
+		padding: 0px;
+	}
+	
+	#filterModal li .sig-menu div a{
+		padding:0px 5px;
+		line-height: 30px;
+	}
+	
+	#filterModal li a {
+		padding: 0 30px;
+		color: #555555;
+		display: block;
+		font-size: 13px;
+		font-family: "Montserrat", sans-serif;
+		font-weight: bold;
+		line-height: 55px;
+		letter-spacing: .2px;
+		text-transform: uppercase;	
+	}
+	
+}
+@media screen and (min-width: 577px) {
+	.modal{
+		display: none;
+	}
+}
+@media screen and (max-width: 320px) {
+	#contactus .modal-body .control-group .controls img{
+		border-radius: 50%;
+		width: 11%;
+		float: left;
+		clear: left;
+	}
+}
+@media screen and (min-width: 768px) {
+	#contactus .modal-body .control-group .controls img{
+		border-radius: 50%;
+		width: 4%;
+		float: left;
+		clear: left;
+	}
+}
+@media screen and (min-width: 1024px) {
+	#contactus .modal-body .control-group .controls img{
+		border-radius: 50%;
+		width: 5.5%;
+		float: left;
+		clear: left;
+	}
+}
+@media screen and (min-width: 1280px) {
+	#contactus .modal-body .control-group .controls img{
+		border-radius: 50%;
+		width: 5.5%;
+		float: left;
+		clear: left;
+	}
+}

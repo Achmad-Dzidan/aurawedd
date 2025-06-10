@@ -1,0 +1,28 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.wp article.onel ul {
+  margin-top: 10px; }
+  .wp article.onel ul li .small {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px; }
+    .wp article.onel ul li .small:hover {
+      cursor: pointer;
+      width: 14px;
+      height: 14px; }
+.btn-wvw {
+    width: 115% !important;
+}
+@media screen and (max-width: 767px) {
+  .row .story a article h3 {
+    height: 2.6em; } }
+
+
+@media screen and (max-width: 767px) {
+  .row.content.realwed {
+    max-width: unset !important; } }
+
+/*# sourceMappingURL=realwedding.css.map */
